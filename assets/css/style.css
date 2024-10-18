@@ -9,9 +9,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
+body{
+  background: #0f0a0a;
+  height: 100vh;
 }
 
 a {
@@ -272,6 +272,9 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#hero .container{
+  padding-left: 100px;
+}
 #hero .container h1 {
   text-shadow: 1px 1px 0px greenyellow, 5px 4px 0px rgba(0, 0, 0, 0.15);
   color: white;
@@ -280,7 +283,6 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -759,3 +761,4 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
