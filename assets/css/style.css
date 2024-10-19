@@ -272,9 +272,7 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero .container{
-  padding-left: 100px;
-}
+
 #hero .container h1 {
   text-shadow: 1px 1px 0px greenyellow, 5px 4px 0px rgba(0, 0, 0, 0.15);
   color: white;
@@ -290,7 +288,7 @@ h6 {
   align-items: center;
   justify-content: flex-start;
   /* Align content to the left */
-  padding-left: 50px;
+
   /* Adjust padding to align the content */
 }
 
@@ -300,13 +298,14 @@ h6 {
   }
 }
 
-#hero h1 {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 56px;
-  color: #45505b;
+#hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#hero .container h1{
+    font-size: 3rem;
 }
 
 #hero p {
@@ -326,11 +325,12 @@ h6 {
 }
 
 #hero .social-links a {
-  font-size: 35px;
+  font-size: 40px;
   display: inline-block;
   color: #45505b;
   line-height: 1;
   margin-right: 20px;
+  border-radius: 50px;
   transition: 0.3s;
 }
 
@@ -414,6 +414,7 @@ section {
 .about{
   background: black;
 }
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -445,6 +446,7 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Skills
@@ -680,7 +682,7 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
-  padding-left: 10%;
+  padding: 10px;
 }
 
 .contact .info i {
@@ -714,9 +716,8 @@ section {
 
 .contact .info .email,
 .contact .info .address,
-.contact .info .phone,
-.contact .info .social-links {
-  margin-top: 30px;
+.contact .info .phone{
+  margin-top: 10px;
 }
 
 .contact .info .facebook:hover i,
@@ -731,6 +732,12 @@ section {
   height: 300px;
   position: center;
 
+}
+
+.contact iframe{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
 
